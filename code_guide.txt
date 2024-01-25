@@ -1,0 +1,148 @@
+# Merge Fast Forward
+
+ git status
+ git init
+ touch Lista_canciones.txt
+
+ git add Lista_canciones.txt
+ git commit -m "creando arcivo Lista Canciones" 
+
+ code . # Para abrir visual studio code
+ -------------------------------------------------
+ # aqui vamos agregar dos canciones te dejo las que agregue yo en comentario
+ -----------------------------------------------
+
+ ------------------------------------
+ #M úsica Ligera - Soda Estereo
+ # persiana Americana - Soda Estereo
+ ------------------------------------
+
+ git add .
+ git commit -m "añadí dos canciones soda estereo"
+
+ -----------------------------------------
+ # creo una nueva branch y me muevo a ella
+ ------------------------------------------
+
+ git switch -c Ivan
+ ----------------------------------------------------
+ # en el visual agregamos nuevas canciones a este file
+ --------------------------------------------------------
+
+ ----------------------------------------
+ # Música Ligera - Soda Estereo
+ # Burbujas de amor - Juan luis guerra
+ # Aquel Lugar - Adolescent's Orquesta
+ ------------------------------------------
+
+ git add .
+ git commit -m "añadí dos canciones de estilo salsa y borre una de soda estereo"
+
+ git switch main
+
+ ------------------
+ # creo nuevo branch
+ ---------------------
+
+ git switch -c 2000s
+
+ ---------------------------------------------
+ # abro visua studio code y agrego lo siguiente
+ -----------------------------------------------
+
+-----------------------------------
+# Música Ligera - Soda Estereo
+# persiana Americana - Soda Estereo
+
+# Guns N' Roses - November Rain
+# Gun  N' Roses - Paradise City
+--------------------------------------
+
+git add .
+git commit -m "canciones de los 90"
+
+git switch main
+
+ ------------------
+ # creo nuevo branch
+ ---------------------
+
+ git switch -c emptyList
+
+ ---------------------------
+ # en visual hago los cambios
+ -----------------------------
+
+ ----------------------------
+ # dejas el documentos en blanco
+ -------------------------------
+ git add .
+ git commit -m "empyt list file"
+
+ git switch main
+ 
+------------------------ 
+# creo ultima branch
+------------------------
+
+git switch -c oldies
+
+---------------------------
+# abro visual y añadod
+--------------------------
+
+---------------------------
+# persiana Americana - Soda Estereo
+# My Way - frank sinatra
+# Fly Me to the Moon -  FRank Synatra
+---------------------------------
+
+git add .
+git commit -m "adding sinatra songs"
+
+git switch master
+git log --oneline
+git switch Ivan
+git log --oneline
+git switch master
+git merge Ivan
+--------------------------------------------------------
+# una ves ejecutes este codigo veras que podras leer fast forward pon atencion al resultado de la ejecucion
+---------------------------------------------------
+
+git log --oneline
+-------------------------------------------------
+Mira el archivo en visual para que la gente vea el cambio
+-----------------------------------------------------
+
+----------------------------------------------
+# ahora haremos otra merge con problema 
+-------------------------------------------------
+
+git switch 2000
+touch pop.txt
+--------------------------------------------
+abrov visual y pones dentro de pop.txt
+--------------------------------------
+
+-----------------------------------
+# Ups I did again - Britney spears
+--------------------------------------
+git add .
+git commit -m "pop file with britney"
+
+git log --oneline
+git switch main
+git log --oneline
+
+git merge 2000
+
+-----------------------------------------
+ve al visual y acepta la mejor opcion de cambios que te venga mejor o quieras
+--------------------------------------------
+git add .
+git commit -m "resolving conflict
+-----------------------------------------
+git log --oneline
+
+FIN
