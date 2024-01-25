@@ -1,0 +1,94 @@
+---------------------------
+# vamos a esta url
+https://github.com/Colt/remote-branches-demo
+
+para clonar el repositorio
+
+--------------------------
+
+git clone <url>
+git  branch
+
+-----------------------------------------
+Notaremos que no tiene las mismas branch
+-------------------------------------
+
+git branch -r
+
+-------------------------------------------
+# con este comando vemos todas las branch
+--------------------------------------------
+
+git status
+
+git branch -r
+
+------------------------------------------
+# de aqui nos apareceran las ramas todas
+y a continuación vamos a entrar a una de ellas
+con el siguiente comando
+--------------------------------------------
+
+git checkout origin/food
+ls
+code .
+
+-------------------------------------------------------
+#podemos ver todos los arhivos que hay en ese branch en el github
+---------------------------------------------------------
+
+git switch main
+git branch -r
+
+--------------------------------------------------------
+# vemos las ramas y asi elegir una
+------------------------------------------------------
+
+git branch
+
+-----------------------------
+# vemos que solo tenemos una
+-----------------------------
+
+git switch movies
+
+----------------------------------------
+# y ahora tenemos branch movies en local
+abre el visua studio para que lo veas
+---------------------------------------
+
+code .
+
+git branch -r
+git switch main
+git switch fantasy
+
+----------------------------------------
+# y ahora tenemos branch movies en local
+abre el visua studio para que lo veas
+---------------------------------------
+
+code .
+
+---------------------------------
+# Vamos a añadir un nuevo arvhico en rama fantasy
+--------------------------------
+
+touch skeleton.txt
+
+code .
+------------------------------------------------------
+https://www.asciiart.eu/mythology/skeletons
+Metete en esa url para sacar imagen y colocarla en el nuevo arvhico creado
+-----------------------------------------------------
+
+git add skeleton.txt
+
+git commit -m "add skeleton"
+
+git status # Leer mensaje donde dice adelantado one commit
+
+git branch
+
+
+FIN
