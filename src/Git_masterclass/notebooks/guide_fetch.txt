@@ -1,0 +1,99 @@
+--------------------------------
+# Hacemos un fork en este repositorio
+https://github.com/Colt/remote-branches-demo
+dentor de github te darás cuenta que solo copia el main
+asi que agreagremos en gitub una branch con dos files
+esa branch se llamara food
+lacomida sera manzana
+y bnana
+saca los dibujos de aca
+https://www.asciiart.eu/food-and-drinks
+
+luego crea otro repositorio llamado movies
+de igual manera crea dos files con dos dibujos 
+de las pelis que quieras
+------------------------------------------------
+
+git clone url
+
+-------------------------------------------
+# volvemos al repositorio en github y añadimos
+un file nuevo a la rama food con un dibujo
+y otro a movies 
+----------------------------------------------
+
+git status
+git switch movies
+ls
+
+git fetch origin
+git status
+
+code .
+
+--------------------------------------------------------
+# Notaremos que los commit que hemos hecho en el github
+no los tenemos en el local aun despues de haber usado fetch
+------------------------------------------------------------
+
+git log
+git status
+
+--------------------------------------------------------------------
+# lee bien lo que dice el status de ahi sale el siguiente codigo
+-------------------------------------------------------------------------
+
+git checkout origin/movies
+
+------------------------------------------------------------------------    
+# revisa el visual studio y te daras cuenta que si estan todos los files
+---------------------------------------------------------------------
+git log
+git status
+
+git switch movies
+
+git branch -r
+
+------------------------------------------
+Notaras que en el caso de food
+si estan lso files, esto es caso unico 
+por que fue el ultim file que agregaste
+y puede pasar
+ahora otra vez vamos a github y a la rama food
+vamos agregarle otro file con su imagen
+yo agregue chocolate.txt
+------------------------------------------------
+
+git status
+git fetch origin food
+git branch -r
+
+git checkout origin/food
+
+-----------------------------------------------------------
+revisamos visual studio code, en este caso aparece chocolate
+--------------------------------------------------------------
+
+git switch main
+
+-------------------------------------------------------------
+# Ve a github y ahora crea una branch llamada moreFood no hagas archivos
+-------------------------------------------------------------
+
+git branch -r
+
+---------------------------------------
+#Podemos ver como no aparece la nuevo branch
+----------------------------------------------
+
+git fetch
+
+git branch -r
+
+----------------------------------
+#Ahora si aparece moreFood
+----------------------------------
+
+
+FIN
